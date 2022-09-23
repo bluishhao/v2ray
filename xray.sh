@@ -1,11 +1,7 @@
 #!/bin/bash
 
 sudo -i
-apt-get update
-sudo git clone https://github.com/bluishhao/cloudflare-ddns-client.git
 cd cloudflare-ddns-client
-sudo apt-get install make
-sudo apt-get install pip
 sudo make install
 cloudflare-ddns --configure
 cloudflare-ddns --update-now
