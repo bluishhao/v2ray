@@ -1,7 +1,6 @@
 #!/bin/bash
 
 cd ..
-sudo -i
 apt-get update
 apt-get install make
 apt-get install pip
