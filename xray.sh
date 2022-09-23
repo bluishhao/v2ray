@@ -1,5 +1,15 @@
 #!/bin/bash
 
+apt-get update
+sudo git clone https://github.com/bluishhao/cloudflare-ddns-client.git
+cd cloudflare-ddns-client
+sudo apt-get install make
+sudo apt-get install pip
+sudo make install
+cloudflare-ddns --configure
+cloudflare-ddns --update-now
+cd ..
+
 RED="\033[31m"    # Error message
 GREEN="\033[32m"  # Success message
 YELLOW="\033[33m" # Warning message
