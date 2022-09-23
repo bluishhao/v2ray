@@ -2,11 +2,16 @@
 
 cd ..
 sudo -i
+apt-get update
+apt-get install make
+apt-get install pip
+git clone https://github.com/bluishhao/cloudflare-ddns-client.git
 cd cloudflare-ddns-client
 sudo make install
 cloudflare-ddns --configure
 cloudflare-ddns --update-now
 cd ..
+cd v2ray
 
 RED="\033[31m"    # Error message
 GREEN="\033[32m"  # Success message
