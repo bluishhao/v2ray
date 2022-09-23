@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo -i
 apt-get update
 sudo git clone https://github.com/bluishhao/cloudflare-ddns-client.git
 cd cloudflare-ddns-client
