@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ..
 sudo -i
 cd cloudflare-ddns-client
 sudo make install
